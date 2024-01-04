@@ -1,0 +1,15 @@
+# for testing only
+version: '3'
+
+services:
+  testapp:
+    build: .
+    environment:
+      TZ: America/New_York
+      DASHBOARD_USER: admin
+      DASHBOARD_PASSWORD: changeme
+    ports:
+    - '8081:8080'
+    # volumes:
+    #   - /home/brajam/data/webhooks:/data/web-hooker/webhooks
+
